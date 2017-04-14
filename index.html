@@ -64,10 +64,6 @@
         </section>
 
 
-        					
-        <!-- Example of nested vertical slides -->
-        <section>
-
             <section>
                     <h2>什麼是CMSimpfly? 什麼是Fossil?</h2>
                     <p>CMSimpfly是一個內容管理系統，它不需要資料庫即可運作。
@@ -80,22 +76,6 @@
                     <br>
                    
             </section>
-            
-            <section>
-                        <h2>Basement Level 1</h2>
-                        <p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-            </section>
-            
-            <section>
-                        <h2>Basement Level 2</h2>
-                        <p>That's it, time to go back up.</p>
-                        <br>
-                        <a href="#/2">
-                        <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-                        </a>
-            </section>
-            
-        </section>
 
         						
         <section>
@@ -107,7 +87,29 @@
       </p>
         </section>
 
-
+ <script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/head.min.js"></script>
+        <script src="https://cad-lab.github.io/cadlab_data/reveal/js/reveal.js"></script>
+        <script>
+                // More info https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+                    center: true,
+        
+                    transition: 'slide', // none/fade/slide/convex/concave/zoom
+        
+                    // More info https://github.com/hakimel/reveal.js#dependencies
+                    dependencies: [
+                        { src: 'https://cad-lab.github.io/cadlab_data/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                        { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/zoom-js/zoom.js', async: true },
+                        { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/notes/notes.js', async: true }
+                    ]
+                });
+        </script>
         			
 </div>
 
